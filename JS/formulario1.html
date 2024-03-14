@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+function validarNome(){
+	var nome = document.getElementById("fnome")
+	if (nome == "") {
+		alert("Insira seu nome!");
+	}
+}
+
+function validarEmail(){
+	var nome = document.getElementById("fnome")
+	if (nome == "") {
+		alert("Insira seu nome!");
+	}
+}
+
+function validarIdade(){
+	var nome = document.getElementById("fnome")
+	if (nome == "") {
+		alert("Insira seu nome!");
+	}
+}
+
+function validarSenha(){
+	var nome = document.getElementById("fnome")
+	if (nome == "") {
+		alert("Insira seu nome!");
+	}
+}
+</script>
+
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="/action_page.php" method="post">
+  Name: <input type="text" id="fnome" onchange="validarNome()">
+  E-mail: <input type="text" id="femail" onchange="validarEmail()">
+  Idade: <input type="number" id="fidade" onchange="validarIdade()">
+  Nascimento: <input type="date" id="fnascimento">
+  Senha: <input type="text" id="fsenha" onchange="validarSenha()">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

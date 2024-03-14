@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	#um{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#formulario{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+</style>
+
+
+<script>
+function validateForm() {
+  let x = document.forms["myForm"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+
+</head>
+<body>
+
+<div  id="formulario">
+	<h2>Formulário teste</h2>
+
+	<form method="post" name="myForm">
+	  <div id="um">
+	  	Nome: <input>
+	 	E-mail: <input>
+	  </div>
+	  Idade: <input>
+	  Nascimento: <input type="date">
+	  Senha: <input type="password">
+
+	<button onclick="validateForm()">Cadastrar</button>
+	</form>
+</div>
+
+</body>
+</html>
