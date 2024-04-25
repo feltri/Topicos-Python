@@ -1,0 +1,19 @@
+cd desktop
+mkdir teste
+cd teste
+py -m venv projeto
+projeto\Scripts\activate
+pip install django
+py -m djago startproject mysite
+cd mysite
+py .\manage.py runserver //escreve "py man" e tecla tab
+
+ctrl c - (terminal) para a aplicação
+
+py .\manage.py runserver 8080 //escolhe a porta
+py .\manage.py runserver 0.0.0.0:8080 //escolhe a porta
+
+python manage.py startapp polls
+
+https://docs.djangoproject.com/en/5.0/intro/tutorial01/
+//site para obter código da view, urls (criada dentro de siteCotil/polls) urls (siteCotil/siteCotil)
